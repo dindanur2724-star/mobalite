@@ -2,34 +2,22 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>MOBA Lite v4</title>
+<title>Forest Clash - Wild Realms</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>⚔️ MOBA Lite v4 – Level Dewa ⚔️</h2>
+<h2>🌲 FOREST CLASH : WILD REALMS 🌲</h2>
+<p>W A S D = Gerak | Spasi = Tembak | Q = Skill</p>
 
-<div class="ui">
-  ❤️ <span id="hp"></span>
-  💰 <span id="gold"></span>
-  🏆 Rank: <span id="rank"></span>
-</div>
+<canvas id="game" width="1000" height="600"></canvas>
 
-<canvas id="gameCanvas" width="1000" height="500"></canvas>
-
-<!-- MOBILE CONTROLS -->
-<div class="mobile">
-  <div id="joystick"></div>
-  <div class="skills">
-    <button onclick="useSkill('Q')">Q</button>
-    <button onclick="useSkill('E')">E</button>
-    <button onclick="useSkill('R')">R</button>
-  </div>
-</div>
-
-<script src="rank.js"></script>
-<script src="ai.js"></script>
+<script src="heroes.js"></script>
+<script src="map.js"></script>
+<script src="jungle.js"></script>
+<script src="projectile.js"></script>
 <script src="joystick.js"></script>
 <script src="game.js"></script>
+
 </body>
 </html>
